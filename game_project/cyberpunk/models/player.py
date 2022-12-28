@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from .stats import Stats
 
 
 class Player(models.Model):
@@ -15,9 +16,13 @@ class Player(models.Model):
 
     appearance = 0# TODO: one to one field to appearance model
     player_class = 0# TODO: one to one field to player class model
-    body_type = 0# TODO: one to one field to body type model
+    body_type = models.CharField(max_length=100)
+
     
-    stats = 0# TODO: one to one field to stats model
+    stats = models.OneToOneField(
+        Stats,
+        on_delete=models.CASCADE,
+    )
     skills = 0# TODO: one to many to skills model
 
     stash = 0# TODO: one to one field to stash model
