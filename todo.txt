@@ -1,0 +1,15 @@
+# Active slots inventory for player/NPC's, maybe transfer implants as active_slot sub
+        maybe active slots and implants inside inventory?
+        or implants inside active slots and active slots inside inventory?
+
+
+
+# Maybe better if we create nececcary abstract controllers at start, and non-abstract controllers when player or NPC does an action
+        example: At start we have player and action controller, when player click "use" on the door, we:
+                    1. Player calls his method "use", where code to call action controller
+                    2. Action controller gets the door that player wants to "use"
+                    3. Action controller creates an door_control object, like an interface with all nececcary methods to work with that door
+                    4. Door_control object checks if player can open door, and links player to minigame, etc.
+                    5. If minigame returns success or door isn't locked(could be opened)
+                    6. door_control opens the door and returns success to action controller, action controller erase door_control with only return code(success or error or failed to open the door)
+
