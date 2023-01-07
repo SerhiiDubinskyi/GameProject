@@ -1,11 +1,15 @@
-from abc_implants import implants
+from abc_implant import implants
 
 
 class IActiveSlots:
 
     head:object
-    rhand:object
-    lhand:object
+
+    l_arm:object
+    r_arm:object
+
+    r_hand:object
+    l_hand:object
 
     legs:object
     boots:object
