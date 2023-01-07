@@ -1,9 +1,10 @@
 from typing import List
-from abc_active_slots import IActiveSlots
+
+from game_project.cyberpunk.engine.inventory_system.abc_item import IItem
 
 
 class IInventory:
-    items: List[object]
+    items: List[IItem]
     volume: float
 
     @property

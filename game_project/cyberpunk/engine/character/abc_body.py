@@ -11,6 +11,7 @@ class IBodyPart:
     active_slot: ISlot
     passive_slots: List[ISlot]
 
+
 class IBody:
     head: IBodyPart
 

@@ -4,7 +4,7 @@ from .stats import Stats
 
 
 class Player(models.Model):
-    __object_type__ = 'player'
+    __object_type__ = 'character'
     
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='players')
     name = models.CharField(max_length=100)
@@ -15,7 +15,7 @@ class Player(models.Model):
     biography = 0# TODO: characteristics growth through the game
 
     appearance = 0# TODO: one to one field to appearance model
-    player_class = 0# TODO: one to one field to player class model
+    player_class = 0# TODO: one to one field to character class model
     body_type = models.CharField(max_length=100)
 
     
