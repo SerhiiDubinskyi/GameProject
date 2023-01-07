@@ -28,4 +28,4 @@ class ICharacter:
 
     @property
     def appearance(self):
-        return  # get appearance based on equiped items
+        return  # get appearance based on equipped items
