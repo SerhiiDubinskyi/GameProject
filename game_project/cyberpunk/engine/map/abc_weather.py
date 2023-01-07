@@ -1,3 +1,9 @@
+class IWeatherState:
+    pass
+
+
 class IWeather:
-    weather_state: object
+    weather_state: IWeatherState
     temperature: int
+
+

@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 from typing import List
 
-class IClass(ABC):
 
+class IClass(ABC):
     __class_name__: object
 
     perks: List[object]
@@ -15,4 +15,3 @@ class IClass(ABC):
     # def method(obj_class, object_under_action):
     #     object_under_action.type = door
     #         door_control.method()
-

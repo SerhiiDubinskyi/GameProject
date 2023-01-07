@@ -22,3 +22,10 @@ class IBody:
 
     left_leg: IBodyPart
     right_leg: IBodyPart
+
+    def get_implants(self):
+        return  # for each IBodyPart get implant
+
+    @property
+    def health_points(self):
+        return  # Sum of all Health Points, or head hp
