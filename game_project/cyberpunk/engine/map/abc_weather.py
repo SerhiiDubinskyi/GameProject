@@ -1,9 +1,12 @@
+from typing import List
+
+
 class IWeatherState:
     pass
 
 
 class IWeather:
-    weather_state: IWeatherState
+    weather_states: List[IWeatherState]
     temperature: int
 
 

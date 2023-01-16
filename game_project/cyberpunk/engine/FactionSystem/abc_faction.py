@@ -1,0 +1,2 @@
+class IFaction:
+    name: str
