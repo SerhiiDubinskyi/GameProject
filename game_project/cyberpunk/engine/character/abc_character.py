@@ -1,3 +1,4 @@
+from game_project.cyberpunk.engine.character.abc_biography import IBiography
 from game_project.cyberpunk.engine.character.abc_body import IBody
 from game_project.cyberpunk.engine.character.abc_state import IState
 from game_project.cyberpunk.engine.character.classes.abc_class import IClass
@@ -10,7 +11,7 @@ class ICharacter:
     action_points: int
     state: IState
     body: IBody
-    biography: object
+    biography: IBiography
 
     location: object
 

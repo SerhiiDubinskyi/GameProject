@@ -16,16 +16,16 @@ class IPlayer(ICharacter):
     state: IState
     body: IBody
 
-    biography: object  #
+    biography: object
 
-    location: object
+    current_location: object
 
-    mounts: IMount
+    mount: IMount
     summon: ISummon
 
     @property
     def stats(self):
-        return  # get all stats or calculate it
+        return  # get all stats or calculate it(stats-object???maybe stats-dict???)
 
     @property
     def health_points(self):
